@@ -1,0 +1,5 @@
+if( loginSuccessful) {
+  logger.servre(" User login succeeded for: " + username);
+} else {
+  logger.servre(" User login failed for: " + username);
+}
