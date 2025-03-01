@@ -1,8 +1,8 @@
 // Rule 08 - Visibility and Atomicity (VNA)
 // Part VNA00-J - Ensure Visibility when Accessing Shared Primitive Variables
 
-final class ControlledStop implements Rannable {
-  private boolean done = false;
+final class ControlledStop implements Runnable {
+  private volatile boolean done = false;
 
   @Override public void run() {
     while (!done) {
